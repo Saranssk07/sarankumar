@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grad{
+    background-image: linear-gradient(to right yellow, silver);
+}
+
+.image, .Contact, .Skills, .Language, .Hobbies, .Education, {
+    margin-bottom: 30px;
+}
+.full{
+    width: 50%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: aqua;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.left{
+    position: initial;
+    background-color: cadetblue;
+    padding: 40px;
+}
+
+.right{
+    position: initial;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.h3{
+    color: rgb(245, 24, 24);
+    text-underline-offset: initial;
+    background-color: blue;
+}
+
+.h2{
+    color: black;
+}
