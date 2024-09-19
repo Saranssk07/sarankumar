@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -16,14 +17,14 @@ body{
     background-image: linear-gradient(to right yellow, silver);
 }
 
-.image, .Contact, .Skills, .Language, .Hobbies, .Education, {
+.image, .Contact, .Skills, .Language, .Hobbies, .Education {
     margin-bottom: 30px;
 }
 .full{
     width: 50%;
     max-width: 1000px;
     min-height: 100px;
-    background-color: aqua;
+    background-color: rgb(162, 189, 194);
     margin: 0px;
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -33,6 +34,7 @@ body{
     position: initial;
     background-color: cadetblue;
     padding: 40px;
+    
 }
 
 .right{
@@ -49,4 +51,55 @@ body{
 
 .h2{
     color: black;
+}
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .full {
+        grid-template-columns: 1fr; 
+        width: 100%;
+        background-color: transparent; 
+        position: relative;
+        right: 40px;
+        top: 0px;
+        /* Full width on small screens */
+    }
+
+    .left, .right {
+        padding: 15px;
+        width: 100%; /* Ensure the sections fill the screen */
+    }
+
+    .h2 {
+        font-size: 18px; /* Smaller heading font size */
+    }
+}
+
+/* Additional Responsive Styles for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .full {
+        grid-template-columns: 1fr; 
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .left, .right {
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+/* Responsive Styles for Larger Screens */
+@media (min-width: 1024px) {
+    .full {
+        grid-template-columns: 1fr 2fr; /* Adjust grid for larger screens */
+        max-width: 1100px; /* Set max-width for desktops */
+        padding: 30px;
+    }
+
+    .left, .right {
+        padding: 30px;
+    }
 }

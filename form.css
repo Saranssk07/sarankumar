@@ -73,3 +73,45 @@ div{
 span{
     margin:0 5px 0 15px;
 }
+
+/* Mobile Responsive Styling */
+@media (max-width: 480px) {
+    body {
+        background: #59ABE3;
+    }
+
+    .form {
+        width: 100%;
+        padding: 100px; /* Full width for mobile screens */
+        height: auto; /* Height adjusts automatically */
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 20px auto; /* Center the form with smaller margins */
+        box-shadow: 0 0 20px -5px #000; /* Slightly reduce shadow effect */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for headings */
+        width: 100%; /* Ensure it covers the full width */
+    }
+
+    input {
+        padding: 8px; /* Reduce padding for inputs */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+
+    button {
+        padding: 10px; /* Increase padding for better touch targets */
+        font-size: 14px; /* Adjust button text size */
+    }
+
+    div {
+        width: 90%; /* Adjust the width of the div for mobile */
+        bottom: -20px; /* Adjust position */
+        right: 0; /* Move div to the edge */
+        font-size: 12px; /* Smaller text size for the div */
+    }
+
+    .span {
+        right: 10px; /* Adjust the span position */
+    }
+}
